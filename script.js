@@ -24,7 +24,73 @@ function potenciaTexto(base, exponente){
 
 }
 
+//----------------------------------------------------
+// LECTURA DE LA POTENCIA
+//----------------------------------------------------
 
+function leerPotencia(base, exponente){
+
+    const nombres = [
+        "",
+        "uno",
+        "dos",
+        "tres",
+        "cuatro",
+        "cinco",
+        "seis",
+        "siete",
+        "ocho",
+        "nueve",
+        "diez",
+        "once",
+        "doce",
+        "trece",
+        "catorce",
+        "quince"
+    ];
+
+    let nombreBase = nombres[base];
+
+    switch(exponente){
+
+        case 0:
+            return "Se lee: " + nombreBase + " elevado a cero.";
+
+        case 1:
+            return "Se lee: " + nombreBase + " elevado a la primera.";
+
+        case 2:
+            return "Se lee: " + nombreBase + " al cuadrado.";
+
+        case 3:
+            return "Se lee: " + nombreBase + " al cubo.";
+
+        case 4:
+            return "Se lee: " + nombreBase + " a la cuarta.";
+
+        case 5:
+            return "Se lee: " + nombreBase + " a la quinta.";
+
+        case 6:
+            return "Se lee: " + nombreBase + " a la sexta.";
+
+        case 7:
+            return "Se lee: " + nombreBase + " a la séptima.";
+
+        case 8:
+            return "Se lee: " + nombreBase + " a la octava.";
+
+        case 9:
+            return "Se lee: " + nombreBase + " a la novena.";
+
+        case 10:
+            return "Se lee: " + nombreBase + " a la décima.";
+
+        default:
+            return "";
+    }
+
+}
 //----------------------------------------------------
 // CREA LOS BOTONES DE LA BASE
 //----------------------------------------------------
@@ -148,6 +214,10 @@ function actualizarPantalla(){
     document.getElementById("potencia").innerHTML=
 
         potenciaTexto(base,exponente);
+
+    document.getElementById("lecturaPotencia").innerHTML =
+
+        leerPotencia(base,exponente);
 
     let desarrollo=construirDesarrollo();
 
