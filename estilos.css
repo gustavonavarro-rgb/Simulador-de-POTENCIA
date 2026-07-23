@@ -109,7 +109,11 @@ h2{
 
 }
 
-.botonNumero{
+/* ==========================
+   BOTONES DE LA BASE
+========================== */
+
+.botonBase{
 
     padding:15px;
 
@@ -119,7 +123,7 @@ h2{
 
     border-radius:10px;
 
-    background:#4b8edb;
+    background:#d32f2f;
 
     color:white;
 
@@ -129,12 +133,42 @@ h2{
 
 }
 
-.botonNumero:hover{
+.botonBase:hover{
 
-    background:#1d63b5;
+    background:#b71c1c;
 
 }
 
+
+/* ==========================
+   BOTONES DEL EXPONENTE
+========================== */
+
+.botonExponente{
+
+    padding:15px;
+
+    font-size:22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#1976d2;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.botonExponente:hover{
+
+    background:#0d47a1;
+
+}
 .resultadoGrande{
 
     text-align:center;
@@ -166,5 +200,45 @@ hr{
     margin-top:20px;
 
     margin-bottom:20px;
+
+}
+
+.valorBase{
+
+    background:#ffebee;
+
+    border-color:#d32f2f;
+
+    color:#b71c1c;
+
+}
+
+.valorExponente{
+
+    background:#e3f2fd;
+
+    border-color:#1976d2;
+
+    color:#0d47a1;
+
+}
+
+/*=============================
+COLORES DE LA POTENCIA
+=============================*/
+
+.baseTexto{
+
+    color:#d32f2f;
+
+    font-weight:bold;
+
+}
+
+.exponenteTexto{
+
+    color:#1976d2;
+
+    font-weight:bold;
 
 }
