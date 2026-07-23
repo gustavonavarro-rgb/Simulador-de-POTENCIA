@@ -14,11 +14,13 @@ document.getElementById("exponenteActual").innerHTML=exponente;
 
 }
 
-function potenciaTexto(base,exponente){
+function potenciaTexto(base, exponente){
 
-let superIndice=["⁰","¹","²","³","⁴","⁵","⁶","⁷","⁸","⁹","¹⁰"];
-
-return base + superIndice[exponente];
+    return "<span class='baseTexto'>" +
+            base +
+            "</span><sup class='exponenteTexto'>" +
+            exponente +
+            "</sup>";
 
 }
 
@@ -37,7 +39,7 @@ function crearBotonesBase(){
 
         let boton=document.createElement("button");
 
-        boton.className="botonNumero";
+        boton.className="botonBase";
 
         boton.innerHTML=i;
 
@@ -71,7 +73,7 @@ function crearBotonesExponente(){
 
         let boton=document.createElement("button");
 
-        boton.className="botonNumero";
+       boton.className="botonExponente";
 
         boton.innerHTML=i;
 
