@@ -249,14 +249,22 @@ LECTURA DE LA POTENCIA
 
 .lecturaPotencia{
 
+    margin-top:18px;
+
+    padding:12px;
+
+    background:#fff8dc;
+
+    border-left:8px solid #f4b400;
+
+    border-radius:10px;
+
     text-align:center;
 
     font-size:24px;
 
-    color:#444;
-
-    margin-top:10px;
-
     font-style:italic;
+
+    color:#444;
 
 }
